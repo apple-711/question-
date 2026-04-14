@@ -96,13 +96,13 @@ export default function App() {
         key={question.num1 + question.operator + question.num2}
         initial={{ scale: 0.8, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
-        className="w-full max-w-2xl bg-white rounded-[60px] shadow-2xl p-16 md:p-24 flex flex-col items-center gap-8 relative overflow-hidden"
+        className="w-full max-w-2xl bg-white rounded-[60px] shadow-2xl p-10 md:p-20 flex flex-col items-center gap-8 relative overflow-hidden"
       >
         {/* Decorative Background Elements */}
         <div className="absolute -top-10 -left-10 w-48 h-48 bg-macaron-pink rounded-full opacity-20 blur-3xl" />
         <div className="absolute -bottom-10 -right-10 w-48 h-48 bg-macaron-yellow rounded-full opacity-20 blur-3xl" />
 
-        <div className="text-8xl md:text-9xl lg:text-[12rem] font-black text-gray-800 tracking-wider flex items-center gap-6">
+        <div className="text-6xl md:text-7xl lg:text-8xl font-black text-gray-800 tracking-wider flex items-center gap-4">
           <span>{question.num1}</span>
           <span className="text-macaron-pink">{question.operator}</span>
           <span>{question.num2}</span>
